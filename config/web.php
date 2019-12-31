@@ -53,6 +53,11 @@ $config = [
         */
     ],
     'params' => $params,
+    'modules' => [
+        'algorithms' => [
+            'class' => 'app\modules\algorithms\Algorithms',
+        ],
+    ],
 ];
 
 if (YII_ENV_DEV) {
