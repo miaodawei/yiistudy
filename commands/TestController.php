@@ -5,6 +5,7 @@ namespace app\commands;
 
 
 use app\modules\algorithms\services\ClimbingStairs;
+use app\modules\algorithms\services\TwoSum;
 use yii\console\Controller;
 use yii\console\ExitCode;
 
@@ -12,9 +13,10 @@ class TestController extends Controller
 {
     public function actionTest()
     {
-        $job = new ClimbingStairs();
-        $res =  $job->climbingStairsByFibonacciSequence(6);
-        echo '  '.$res.'  ';
+        $job = new TwoSum();
+        $res =  $job->twoSumByHashMap([2,7,11,15], 9);
+        echo '<pre>';
+        print_r($res);
         return ExitCode::OK;
     }
 }
