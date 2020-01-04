@@ -5,6 +5,7 @@ namespace app\commands;
 
 
 use app\modules\algorithms\services\ClimbingStairs;
+use app\modules\algorithms\services\MaxProfit;
 use app\modules\algorithms\services\TwoSum;
 use app\modules\algorithms\services\MaxArea;
 use yii\console\Controller;
@@ -24,6 +25,13 @@ class TestController extends Controller
     public function actionMaxArea() {
         $job = new MaxArea();
         $res = $job->maxArea([1,8,6,2,5,4,8,3,7]);
+        echo '  '.$res.'  ';
+        return ExitCode::OK;
+    }
+
+    public function actionMaxProfit() {
+        $job = new MaxProfit();
+        $res = $job->maxProfit([7,1,5,3,6,4]);
         echo '  '.$res.'  ';
         return ExitCode::OK;
     }
