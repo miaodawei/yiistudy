@@ -57,6 +57,9 @@ $config = [
         'algorithms' => [
             'class' => 'app\modules\algorithms\Algorithms',
         ],
+        'study' => [
+            'class' => 'app\modules\study\Study',
+        ],
     ],
 ];
 
