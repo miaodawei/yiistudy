@@ -2,8 +2,8 @@
 namespace app\commands;
 use app\modules\algorithms\services\ClimbingStairs;
 use app\modules\algorithms\services\MaxProfit;
-use app\modules\algorithms\services\TwoSum;
 use app\modules\algorithms\services\MaxArea;
+use app\modules\algorithms\services\TwoSum;
 use yii\console\Controller;
 use yii\console\ExitCode;
 class TestController extends Controller
