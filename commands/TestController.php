@@ -28,4 +28,12 @@ class TestController extends Controller
         echo '  '.$res.'  ';
         return ExitCode::OK;
     }
+    public function actionTest2() {
+        $str = 1234567890;
+        $start = strtotime(date('Y-m-d'));
+        echo '  '.$start.'  ';die;
+        $arr = str_split($str);
+        echo '<pre>';
+        print_r($arr);
+    }
 }
