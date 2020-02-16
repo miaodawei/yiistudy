@@ -1,8 +1,6 @@
 <?php
 namespace app\modules\algorithms\services;
-
 class MaxArea {
-
     public function maxArea($height) {
         $max = $currentMin = 0;
         $left = 0;
