@@ -1,6 +1,7 @@
 <?php
 /**
  * 快速排序
+ * https://xueyuanjun.com/post/20963
  */
 
 
