@@ -4,6 +4,7 @@ use app\modules\algorithms\services\ClimbingStairs;
 use app\modules\algorithms\services\MaxProfit;
 use app\modules\algorithms\services\MaxArea;
 use app\modules\algorithms\services\TwoSum;
+use app\modules\algorithmstest\Sort;
 use yii\console\Controller;
 use yii\console\ExitCode;
 class TestController extends Controller
@@ -29,11 +30,20 @@ class TestController extends Controller
         return ExitCode::OK;
     }
     public function actionTest2() {
-        $str = 1234567890;
-        $start = strtotime(date('Y-m-d'));
-        echo '  '.$start.'  ';die;
-        $arr = str_split($str);
-        echo '<pre>';
-        print_r($arr);
+        $a = true;
+        $b = false;
+        $c = false;
+        $d = 1;
+//        var_dump($a ^ $b);
+//        var_dump($c ^ $d);
+        var_dump(($a ^  $c ^ $b));
+    }
+
+    public function actionTest3()
+    {
+        $a = [1,3,4,5,6,8,8,8,11,18];
+        $job = new Sort();
+        $res = $job->bsearchLastValue($a, count($a), 8);
+        echo '  '.$res.'  ';
     }
 }
